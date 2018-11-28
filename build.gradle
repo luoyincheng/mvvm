@@ -1,0 +1,25 @@
+apply from: 'dependencies.gradle'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+ext {
+    androidCompileSdkVersion = 27
+    androidBuildToolsVersion = '28.0.3'
+    androidMinSdkVersion = 16
+    androidTargetSdkVersion = 27
+}

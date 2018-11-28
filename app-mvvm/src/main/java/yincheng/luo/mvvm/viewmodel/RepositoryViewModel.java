@@ -46,6 +46,7 @@ public class RepositoryViewModel implements ViewModel {
         this.ownerLayoutVisibility = new ObservableInt(View.INVISIBLE);
         this.ownerEmailVisibility = new ObservableInt(View.VISIBLE);
         this.ownerLocationVisibility = new ObservableInt(View.VISIBLE);
+
         // Trigger loading the rest of the user data as soon as the view model is created.
         // It's odd having to trigger this from here. Cases where accessing to the data model
         // needs to happen because of a change in the Activity/Fragment lifecycle
